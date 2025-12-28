@@ -84,13 +84,13 @@ const Hero = () => {
                 })
             })
 
-    const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
 
 
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden '>
 
-        {/* {isloading && (
+        {isloading && (
             <div className="flex-center absolute z-100 h-dvh w-screen overflow-hidden bg-violet-50 ">
                 <div className="three-body">
                     <div className="three-body__dot"></div>
@@ -98,7 +98,7 @@ const Hero = () => {
                     <div className="three-body__dot"></div>
                 </div>
             </div>
-        )} */}
+        )}
 
         <div id='video-frame' className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75 ">
 
