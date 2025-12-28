@@ -12,7 +12,7 @@ const Hero = () => {
 
     const [currentIndex, setCurrentIndex] = useState(1);
     const [hasClicked, setHasClicked] = useState(false);
-    const [isloading, setIsLoading] = useState(true);
+    // const [isloading, setIsLoading] = useState(true);
     const [loadedVideos, setLoadedVideos] = useState(0);
 
     const totalVideos = 4;
@@ -31,12 +31,12 @@ const Hero = () => {
     }
 
 
-    useEffect(() => {
-        if (loadedVideos === totalVideos -1) {
-            setIsLoading(false)
+    // useEffect(() => {
+    //     if (loadedVideos === totalVideos -1) {
+    //         setIsLoading(false)
 
-        }
-    }, [loadedVideos, totalVideos]);
+    //     }
+    // }, [loadedVideos, totalVideos]);
 
 
 
@@ -90,7 +90,7 @@ const Hero = () => {
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden '>
 
-        {isloading && (
+        {/* {isloading && (
             <div className="flex-center absolute z-100 h-dvh w-screen overflow-hidden bg-violet-50 ">
                 <div className="three-body">
                     <div className="three-body__dot"></div>
@@ -98,7 +98,7 @@ const Hero = () => {
                     <div className="three-body__dot"></div>
                 </div>
             </div>
-        )}
+        )} */}
 
         <div id='video-frame' className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75 ">
 
